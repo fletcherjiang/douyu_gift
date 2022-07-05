@@ -3,18 +3,12 @@
 DouYu-Helper
 </h1>
 
-[![GitHub stars](https://img.shields.io/github/stars/TheSlientnight/douyu_helper?style=flat-square)](https://github.com/TheSlientnight/douyu_helper/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/TheSlientnight/douyu_helper?style=flat-square)](https://github.com/TheSlientnight/douyu_helper/network)
-[![GitHub issues](https://img.shields.io/github/issues/TheSlientnight/douyu_helper?style=flat-square)](https://github.com/TheSlientnight/douyu_helper/issues) 
-[![GitHub All Releases](https://img.shields.io/github/downloads/TheSlientnight/douyu_helper/total?style=flat-square)](https://github.com/TheSlientnight/douyu_helper/releases)
-[![GitHub contributors](https://img.shields.io/github/contributors/TheSlientnight/douyu_helper?style=flat-square)](https://github.com/TheSlientnight/douyu_helper/graphs/contributors)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/TheSlientnight/douyu_helper?style=flat-square)
 </div>
 
-## 工具简介
-利用Github Action的方式实现斗鱼TV自动获取粉丝荧光棒，并完成赠送工具，简单配置即可实现赠送每日赠送荧光棒
+## 简介
+利用Action的方式实现斗鱼自动获取粉丝荧光棒并且赠送，支持不同直播间
 
-**如果认为工具还算好用，请顺手点一个Star吧~**
+
 
 ## 功能列表
 * [x] 每天上午9点启动
@@ -31,16 +25,15 @@ DouYu-Helper
 
 ## 使用说明
 
-### 一、Actions方式(推荐)
-1. **Fork本项目**
+### 一、Actions
+1. **首先Fork本项目**
 2. 修改config.ini配置文件
    ![修改配置文件](docs/img/Config.png)
-3. **获取自己斗鱼账号的COOKIE**(请注意：斗鱼的Token大概一周会失效，因此需要每周更新一次)
-4. 使用浏览器登录[斗鱼](https://www.douyu.com)
+3. **获取自己斗鱼账号的COOKIE**(注意：斗鱼的Token大概一周会失效，因此需要每周更新一次)
+4. 使用浏览器登录斗鱼
 5. 按下F12打开[开发者工具]，在[网络/network]中打开筛选，选择XHR
 6. 随意点击一个请求,将请求头中的cookie复制出来
 ![获取cookie](docs/img/cookie.png)
-   
    
 7. 在项目内点击Setting -> Secrets -> New Secrets,并添加获取到的COOKIES
 
@@ -78,35 +71,3 @@ Please be sure to abide by the Github terms when using Actions. Do not abuse the
    
 [日志示例](https://github.com/TheSlientnight/douyu_helper/runs/2078519193?check_suite_focus=true)
 
-### 二、本地执行(不推荐)
-
-#### Windows命令行内执行
-执行步骤类似于GitHub执行，但是需要将你的COOKIE放入到系统的环境变量中
-1. 将代码clone到本地或直接下载压缩包
-2. 添加环境变量
-   
-    ![](docs/img/Path1.png)
-    ![](docs/img/Path2.png)
-    ![](docs/img/Path3.jpg)
-   
-3. 修改config.ini,详细做法可见[修改config配置](#一、Actions方式(推荐))
-4. 进入项目根目录，使用指令
-```shell
-python main.py
-```
-
-#### Linux命令行执行
-执行步骤同Windows执行，但是环境变量需要配置到/etc/Profile中
-![](docs/img/Linux1.png)
-![](docs/img/Linux2.png)
-添加完成后需要重新读取，使用指令
-```shell
-source /etc/profile
-```
-### 三、Docker镜像
-* [ ] 待更新
-
-### 四、版本记录
-V1.0 工具开源
-
-V1.1 修复平均分配问题
