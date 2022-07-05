@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">
-DouYu-Helper
+DouYu Gift 斗鱼自动荧光棒赠送
 </h1>
 
 </div>
