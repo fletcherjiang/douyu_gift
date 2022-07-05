@@ -28,11 +28,11 @@ DouYu-Helper
 
 ### 一、Actions
 1. **首先Fork本项目**
-2. 修改config.ini配置文件
+2. 修改config.ini配置文件（config/config.ini）![修改config](docs/img/Config.png)
 3. **获取自己斗鱼账号的COOKIE**(注意：斗鱼的Token大概一周会失效，因此需要每周更新一次)
-4. 使用浏览器登录斗鱼
-5. 按下F12打开[开发者工具]，在[网络/network]中打开筛选，选择XHR
-6. 随意点击一个请求,将请求头中的cookie复制出来
+4.  使用浏览器登录斗鱼
+5.   按下F12打开[开发者工具]，在[网络/network]中打开筛选，选择XHR
+6.   随意点击一个请求,将请求头中的cookie复制出来
 ![获取cookie](docs/img/cookie.png)
    
 7. 在项目内点击Setting -> Secrets -> New Secrets,并添加获取到的COOKIES
@@ -62,12 +62,9 @@ DouYu-Helper
 Please be sure to abide by the Github terms when using Actions. Do not abuse the Actions service.
 
 **查看Actions运行日志**
-1. 进入Actions执行结果
+1. 进入Actions查看日志
     ![](docs/img/WatchAction.png)
-2. 查看执行详情
-    ![](docs/img/WatchAction2.png)
-3. 查看执行日志
-    ![](docs/img/WatchAction3.png)
+
    
 [日志示例](https://github.com/TheSlientnight/douyu_helper/runs/2078519193?check_suite_focus=true)
 
