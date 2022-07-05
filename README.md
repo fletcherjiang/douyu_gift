@@ -41,7 +41,7 @@ DouYu-Helper
 |-------------|--------------------------|
 |COOKIES      |按步骤5获取                 |
 |SERVERPUSHKEY|server酱(Turbo版)的推送sckey|
-![添加Secrets](docs/img/Secrets.png)
+
 8. **开启Actions 并触发每日自动执行**
    **Fork仓库之后，GitHub默认不自动执行Actions任务,请手动执行一次以检查工作流**
    ![运行任务](docs/img/Workfelow.png)
@@ -65,6 +65,4 @@ Please be sure to abide by the Github terms when using Actions. Do not abuse the
 1. 进入Actions查看日志
     ![](docs/img/WatchAction.png)
 
-   
-[日志示例](https://github.com/TheSlientnight/douyu_helper/runs/2078519193?check_suite_focus=true)
-
+  
