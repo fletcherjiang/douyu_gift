@@ -7,14 +7,14 @@ from common.get_secrets import get_secrets
 class DYHTTPRequests:
 
     def __init__(self):
-        self.cookie = get_secrets('COOKIES').encode('utf-8')
+        self.cookie = get_secrets('COOKIES')
         self.session = session()
         self.header = {
             "Content-Type": "application/x-www-form-urlencoded",
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                           "Chrome/88.0.4324.182 Safari/537.36 Edg/88.0.705.81",
             "referer": "https://www.douyu.com",
-            "Cookie": self.cookie
+            "Cookie": self.cookie.encode('utf-8')
         }
 
     def request(self, method, path, **kwargs):
