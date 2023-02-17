@@ -7,7 +7,9 @@ from common.get_secrets import get_secrets
 class DYHTTPRequests:
 
     def __init__(self):
-        self.cookie = get_secrets('COOKIES')
+        cookie_str = get_secrets('COOKIES')
+        self.cookie = cookie_str.encode("utf-8").decode("latin1")
+        
         self.session = session()
         self.header = {
             "Content-Type": "application/x-www-form-urlencoded",
