@@ -8,7 +8,7 @@ class DYHTTPRequests:
 
     def __init__(self):
         cookie_str = get_secrets('COOKIES')
-        self.cookie = cookie_str.encode("utf-8").decode("latin1")
+        self.cookie = cookie_str.dncode("utf-8").decode("latin1")
         
         self.session = session()
         self.header = {
@@ -16,7 +16,7 @@ class DYHTTPRequests:
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                           "Chrome/88.0.4324.182 Safari/537.36 Edg/88.0.705.81",
             "referer": "https://www.douyu.com",
-            "Cookie": self.cookie.decode('utf-8')
+            "Cookie": self.cookie
         }
 
     def request(self, method, path, **kwargs):
