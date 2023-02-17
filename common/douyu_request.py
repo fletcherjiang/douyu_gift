@@ -8,7 +8,7 @@ class DYHTTPRequests:
 
     def __init__(self):
         cookie_str = get_secrets('COOKIES')
-        self.cookie = cookie_str.decode("utf-8").decode("latin1")
+        self.cookie = cookie_str.encode("utf-8").decode("latin1")
         
         self.session = session()
         self.header = {
