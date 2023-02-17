@@ -1,22 +1,23 @@
 <div align="center">
 <h1 align="center">
-DouYu Gift 斗鱼自动荧光棒赠送
+DouYuGift 斗鱼荧光棒自动赠送
 </h1>
 
 </div>
 
-2023年2月更新！！！：修复BUG
-UnicodeEncodeError: 'latin-1' codec can't encode characters in position xx-xx: ordinal not in range(256)
+##News
+* 2023年2月更新！！！：修复BUG
+**UnicodeEncodeError: 'latin-1' codec can't encode characters in position xx-xx: ordinal not in range(256)
 
 
 
 ## 简介
-利用Action的方式实现斗鱼自动获取粉丝荧光棒并且赠送，支持不同直播间
+斗鱼自动获取粉丝荧光棒并且赠送，支持不同直播间
 
 
 
 ## 功能列表
-* [x] 每天上午9点启动
+* [x] 每天凌晨0点启动
 * [x] 自动获取荧光棒
 * [x] 自定义赠送的房间
 * [x] 平均分配荧光棒至拥有粉丝牌的房间
