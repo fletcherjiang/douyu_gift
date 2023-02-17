@@ -5,7 +5,7 @@ DouYuGift 斗鱼荧光棒自动赠送
 
 </div>
 
-##News
+## News
 * 2023年2月更新！！！：修复BUG
 **UnicodeEncodeError: 'latin-1' codec can't encode characters in position xx-xx: ordinal not in range(256)
 
