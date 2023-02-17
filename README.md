@@ -5,6 +5,11 @@ DouYu Gift 斗鱼自动荧光棒赠送
 
 </div>
 
+2023年2月更新！！！：修复BUG
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position xx-xx: ordinal not in range(256)
+
+
+
 ## 简介
 利用Action的方式实现斗鱼自动获取粉丝荧光棒并且赠送，支持不同直播间
 
